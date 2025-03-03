@@ -1,5 +1,6 @@
+"use client"
 import React from "react"
-import { CommandMenu } from "@/components/command-menu"
+import { CommandMenu } from "@webapp/components/command-menu"
 
 interface SearchContextType {
   open: boolean
@@ -34,7 +35,6 @@ export function SearchProvider({ children }: Props) {
   )
 }
 
-// eslint-disable-next-line react-refresh/only-export-components
 export const useSearch = () => {
   const searchContext = React.useContext(SearchContext)
 
