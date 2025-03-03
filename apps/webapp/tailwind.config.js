@@ -1,8 +1,11 @@
 import tailwindCssAnimate from "tailwindcss-animate"
-import { fontFamily } from "tailwindcss/defaultTheme"
 import { fonts } from "./src/config/fonts"
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const defaultTheme = require("tailwindcss/defaultTheme")
+
 /** @type {import('tailwindcss').Config} */
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
   darkMode: ["class"],
   content: ["./src/**/*.{ts,tsx,js,jsx}"],
@@ -17,8 +20,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        inter: ["Inter", ...fontFamily.sans],
-        manrope: ["Manrope", ...fontFamily.sans],
+        inter: ["Inter", ...defaultTheme.fontFamily.sans],
+        manrope: ["Manrope", ...defaultTheme.fontFamily.sans],
       },
       borderRadius: {
         lg: "var(--radius)",
