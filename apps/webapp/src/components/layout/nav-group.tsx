@@ -16,7 +16,6 @@ import {
 } from "@webapp/components/ui/sidebar"
 import { ChevronRight } from "lucide-react"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
 import { ReactNode } from "react"
 import { Badge } from "../ui/badge"
 import {
@@ -31,7 +30,7 @@ import { NavCollapsible, NavItem, NavLink, type NavGroup } from "./types"
 
 export function NavGroup({ title, items }: NavGroup) {
   const { state } = useSidebar()
-  const href = usePathname()
+  const href = "" //@TODO: usePathname()
   return (
     <SidebarGroup>
       <SidebarGroupLabel>{title}</SidebarGroupLabel>

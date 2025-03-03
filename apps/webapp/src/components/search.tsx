@@ -1,3 +1,4 @@
+"use client"
 import { IconSearch } from "@tabler/icons-react"
 import { cn } from "@webapp/lib/utils"
 import { useSearch } from "@webapp/context/search-context"
