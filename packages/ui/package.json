@@ -5,10 +5,10 @@
   "sideEffects": false,
   "license": "MIT",
   "exports": {
-    "./button": {
-      "types": "./src/button.tsx",
-      "import": "./dist/button.mjs",
-      "require": "./dist/button.js"
+    "./*": {
+      "types": "./src/*.tsx",
+      "import": "./dist/*.mjs",
+      "require": "./dist/*.js"
     }
   },
   "scripts": {

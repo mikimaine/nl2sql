@@ -15,6 +15,7 @@ import {
 import { AudioWaveform, Command, GalleryVerticalEnd } from "lucide-react"
 import { type SidebarData } from "../types"
 
+
 export const sidebarData: SidebarData = {
   user: {
     name: "admin",
