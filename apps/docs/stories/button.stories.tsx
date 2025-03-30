@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react"
 import { Button } from "@parse-it/ui/button"
-import { Card } from "@parse-it/ui/card"
 
 const meta: Meta<typeof Button> = {
   component: Button,
@@ -31,7 +30,6 @@ export const Primary: Story = {
       }}
     >
       Hello
-      <Card newVal={false}>sample</Card>
     </Button>
   ),
   name: "Button",
