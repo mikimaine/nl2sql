@@ -1,9 +1,10 @@
+import { Toaster } from "@webapp/components/ui/toaster"
 import { FontProvider } from "@webapp/context/font-context"
 import { ThemeProvider } from "@webapp/context/theme-context"
+import { Providers } from "@webapp/providers"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
-import { Toaster } from "@webapp/components/ui/toaster"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,17 +35,18 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap"
           rel="stylesheet"
         />
-        <script src="https://www.google.com/recaptcha/enterprise.js?render=6LebJekqAAAAAAxp8AsbcTInLPL9Bre737esOY73"></script>
         <meta name="theme-color" content="#fff" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased group/body`}
       >
         <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
-          <FontProvider>
-            <Toaster />
-            {children}
-          </FontProvider>
+          <Providers>
+            <FontProvider>
+              <Toaster />
+              {children}
+            </FontProvider>
+          </Providers>
         </ThemeProvider>
       </body>
     </html>
