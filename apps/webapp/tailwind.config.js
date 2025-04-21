@@ -1,3 +1,4 @@
+import colors from "tailwindcss/colors"
 import tailwindCssAnimate from "tailwindcss-animate"
 import { fonts } from "./src/config/fonts"
 

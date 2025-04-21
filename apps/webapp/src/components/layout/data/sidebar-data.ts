@@ -40,6 +40,13 @@ export const sidebarData: SidebarData = {
           url: "/",
           icon: IconLayoutDashboard,
         },
+
+        {
+          title: "NL2SQL",
+          url: "/nl2sql",
+          icon: IconLayoutDashboard,
+        },
+
         {
           title: "Models",
           url: "/models",
