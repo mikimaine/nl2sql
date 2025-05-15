@@ -11,10 +11,10 @@ export const Header = ({ handleClear }: { handleClear: () => void }) => {
         className="text-2xl sm:text-3xl font-bold text-foreground flex items-center cursor-pointer"
         onClick={() => handleClear()}
       >
-        NL2SQL Dashboard
+        NL2SQL Interaction
       </h1>
       <div className="flex items-center justify-center space-x-2">
-        <Button
+        {/* <Button
           variant="ghost"
           size="icon"
           onClick={() => setTheme(theme === "light" ? "dark" : "light")}
@@ -25,7 +25,7 @@ export const Header = ({ handleClear }: { handleClear: () => void }) => {
             <Sun className="h-5 w-5" />
           )}
           <span className="sr-only">Toggle theme</span>
-        </Button>
+        </Button> */}
       </div>
     </div>
   )

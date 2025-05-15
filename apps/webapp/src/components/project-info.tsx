@@ -7,7 +7,7 @@ export const ProjectInfo = () => {
       <Alert className="bg-muted text-muted-foreground border-0">
         <Info className="h-4 w-4 text-primary" />
         <AlertDescription>
-          This is a demo of NL2SQL using NLP from OpenAI for UTDallas.
+          {/* This is a demo of NL2SQL using NLP from OpenAI for UTDallas. */}
         </AlertDescription>
       </Alert>
     </div>
